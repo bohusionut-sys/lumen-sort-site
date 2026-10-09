@@ -34,10 +34,10 @@
       <a class="btn teal js-link" data-href="{{GOOGLE_GROUP_URL}}" href="#">Join the Google Group</a><span class="soon js-soon" hidden>Link coming soon. Check back shortly.</span></div>
     <div class="card"><span class="num">2</span><h3>Opt in on Google Play</h3>
       <p>Open the opt-in page (signed in with the same account) and tap <b>Become a tester</b>. If it says the app isn't available yet, wait a few minutes after joining the group.</p>
-      <a class="btn teal js-link" data-href="{{PLAY_OPTIN_URL}}" href="#">Become a tester</a><span class="soon js-soon" hidden>Link coming soon. Check back shortly.</span></div>
+      <a class="btn teal js-link" data-href="https://play.google.com/apps/testing/com.baigames.lumensort" href="#">Become a tester</a><span class="soon js-soon" hidden>Link coming soon. Check back shortly.</span></div>
     <div class="card"><span class="num">3</span><h3>Install, play, keep it 14 days</h3>
       <p>Install <b>Lumen Sort</b> from the Play Store link on the opt-in page. Play a few levels whenever you like, and please <b>keep it installed for at least 14 days</b> so the test counts.</p>
-      <a class="btn js-link" data-href="{{PLAY_STORE_URL}}" href="#">Open in Google Play</a><span class="soon js-soon" hidden>Available after step 2.</span></div>
+      <a class="btn js-link" data-href="https://play.google.com/store/apps/details?id=com.baigames.lumensort" href="#">Open in Google Play</a><span class="soon js-soon" hidden>Available after step 2.</span></div>
   </div>
 
   <h2>What testers get</h2>
@@ -68,11 +68,11 @@
     <p>In the game, open <b>Settings → Send feedback</b>. It opens your email app with your app version and phone model already filled in. You can also write to <a href="mailto:bohus.ionut@gmail.com?subject=Lumen%20Sort%20test%20feedback">bohus.ionut@gmail.com</a>, or leave private feedback on the Play Store page.</p>
   </div>
 
-  <footer>Lumen Sort for Android · package <code>com.lumensort.app</code> · <a href="privacy.html">Privacy policy</a> · Contact: <a href="mailto:bohus.ionut@gmail.com">bohus.ionut@gmail.com</a><br>
+  <footer>Lumen Sort for Android · package <code>com.baigames.lumensort</code> · <a href="privacy.html">Privacy policy</a> · Contact: <a href="mailto:bohus.ionut@gmail.com">bohus.ionut@gmail.com</a><br>
   Fonts: Fredoka and Nunito (SIL Open Font License). Google Play is a trademark of Google LLC.</footer>
 </div>
 <script>
-// Fill in the three links in this file (search for {{...}}). Until then the buttons show "coming soon".
+// Links still set to a {{...}} placeholder show "coming soon" (only the Google Group link is left to fill in).
 document.querySelectorAll(".js-link").forEach(function (a) {
   var h = a.getAttribute("data-href");
   if (!h || h.indexOf("{{") === 0) { a.classList.add("off"); a.setAttribute("aria-disabled", "true"); a.parentNode.querySelector(".js-soon").hidden = false; }
