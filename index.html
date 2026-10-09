@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lumen Sort — join the closed test</title>
+<meta name="description" content="Help test Lumen Sort, a relaxing water sort / color sort puzzle for Android, before launch. Testers get the exclusive Founding Lantern reward.">
+<meta property="og:title" content="Lumen Sort — join the closed test">
+<meta property="og:description" content="A relaxing water sort puzzle with glowing lanterns. Join the Android closed test.">
+<meta property="og:image" content="assets/feature-1024x500.jpg">
+<link rel="icon" href="assets/favicon-32.png">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top"><img src="assets/icon-192.png" alt="Lumen Sort icon"><b>Lumen Sort</b>
+    <nav><a href="#join">Join</a><a href="#feedback">Feedback</a><a href="privacy.html">Privacy</a></nav></header>
+
+  <section class="hero">
+    <div>
+      <span class="chip">ANDROID CLOSED TEST · 2026</span>
+      <h1>Pour glowing nectar. Light every lantern.</h1>
+      <p class="lead">Lumen Sort is a calm water sort / color sort puzzle. Pour the glowing liquid until every vial holds one pure colour and its lantern ignites. There are 180 hand-checked levels, a Night Garden that grows as you play, and five extra modes.</p>
+      <p>We're testing on Google Play before launch. It's free, takes a minute to join, and testers keep an exclusive <b>Founding Lantern</b> reward forever.</p>
+      <a class="btn" href="#join">Join the test</a>
+    </div>
+    <video src="assets/lumen-sort-gameplay.mp4" poster="assets/clip-poster.jpg" autoplay muted loop playsinline controls aria-label="Lumen Sort gameplay clip"></video>
+  </section>
+
+  <h2 id="join">Join in 3 steps</h2>
+  <div class="steps">
+    <div class="card"><span class="num">1</span><h3>Join the tester group</h3>
+      <p>Google Play only lets you install the test if your Google account is in our tester group. Join with the account you use on your Android phone.</p>
+      <a class="btn teal js-link" data-href="{{GOOGLE_GROUP_URL}}" href="#">Join the Google Group</a><span class="soon js-soon" hidden>Link coming soon. Check back shortly.</span></div>
+    <div class="card"><span class="num">2</span><h3>Opt in on Google Play</h3>
+      <p>Open the opt-in page (signed in with the same account) and tap <b>Become a tester</b>. If it says the app isn't available yet, wait a few minutes after joining the group.</p>
+      <a class="btn teal js-link" data-href="{{PLAY_OPTIN_URL}}" href="#">Become a tester</a><span class="soon js-soon" hidden>Link coming soon. Check back shortly.</span></div>
+    <div class="card"><span class="num">3</span><h3>Install, play, keep it 14 days</h3>
+      <p>Install <b>Lumen Sort</b> from the Play Store link on the opt-in page. Play a few levels whenever you like, and please <b>keep it installed for at least 14 days</b> so the test counts.</p>
+      <a class="btn js-link" data-href="{{PLAY_STORE_URL}}" href="#">Open in Google Play</a><span class="soon js-soon" hidden>Available after step 2.</span></div>
+  </div>
+
+  <h2>What testers get</h2>
+  <div class="card reward"><img src="assets/founding-lantern.svg" width="110" height="110" alt="" aria-hidden="true">
+    <div><h3>The Founding Lantern</h3>
+      <p>An exclusive teal-and-gold <b>vial skin</b> and a <b>stone lantern</b> for your Night Garden. Everyone who plays the closed-test build gets it, and it stays on your device after the public launch. It will never be sold.</p></div></div>
+
+  <h2>Screenshots</h2>
+  <div class="gallery">
+    <img src="assets/screens/01-play.jpg" alt="Pouring glowing nectar between vials" loading="lazy">
+    <img src="assets/screens/02-win.jpg" alt="Level complete with three stars" loading="lazy">
+    <img src="assets/screens/03-garden.jpg" alt="The Night Garden and Lumen Tree" loading="lazy">
+    <img src="assets/screens/04-modes.jpg" alt="Modes: Zen, Lantern Rush, Weekly Tournament, Garden Quests, Mystery Night" loading="lazy">
+    <img src="assets/screens/05-zen.jpg" alt="Zen mode board" loading="lazy">
+    <img src="assets/screens/06-style.jpg" alt="Style screen with vial skins" loading="lazy">
+    <img src="assets/screens/07-mystery.jpg" alt="Mystery Night veiled board" loading="lazy">
+    <img src="assets/screens/08-menu.jpg" alt="Main menu" loading="lazy">
+  </div>
+
+  <h2 id="feedback">What to test and how to tell us</h2>
+  <div class="card">
+    <ul class="ticks">
+      <li>Play the first 15–20 levels. Is anything confusing, too easy or too hard?</li>
+      <li>Try a mode from the <b>Modes</b> button (Zen, Lantern Rush, the Weekly Tournament and more).</li>
+      <li>Look around the Shop and Style screens. <b>All purchases are simulated in this test: nothing is ever charged</b>, and there are no real ads.</li>
+      <li>Tell us about crashes, freezes, text that doesn't fit your screen, or sounds that are too loud or quiet.</li>
+    </ul>
+    <p>In the game, open <b>Settings → Send feedback</b>. It opens your email app with your app version and phone model already filled in. You can also write to <a href="mailto:bohus.ionut@gmail.com?subject=Lumen%20Sort%20test%20feedback">bohus.ionut@gmail.com</a>, or leave private feedback on the Play Store page.</p>
+  </div>
+
+  <footer>Lumen Sort for Android · package <code>com.lumensort.app</code> · <a href="privacy.html">Privacy policy</a> · Contact: <a href="mailto:bohus.ionut@gmail.com">bohus.ionut@gmail.com</a><br>
+  Fonts: Fredoka and Nunito (SIL Open Font License). Google Play is a trademark of Google LLC.</footer>
+</div>
+<script>
+// Fill in the three links in this file (search for {{...}}). Until then the buttons show "coming soon".
+document.querySelectorAll(".js-link").forEach(function (a) {
+  var h = a.getAttribute("data-href");
+  if (!h || h.indexOf("{{") === 0) { a.classList.add("off"); a.setAttribute("aria-disabled", "true"); a.parentNode.querySelector(".js-soon").hidden = false; }
+  else { a.href = h; a.target = "_blank"; a.rel = "noopener"; }
+});
+</script>
+</body>
+</html>
